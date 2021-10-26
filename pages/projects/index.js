@@ -25,9 +25,17 @@ export default function Projects({ projects }) {
 
     return (
         <div className="recipe-list">
-            {projects.map(project => (
-                <ProjectCard key={project.sys.id} project={project} />
-            ))}
+            <article>
+                <h1>Here is some of my work </h1>
+            </article>
+            <article>
+                <h1 className="hidden">Projects</h1>
+                <section>
+                    {projects.map(project => (
+                        <ProjectCard key={project.sys.id} project={project} />
+                    ))}
+                </section>
+            </article>
         </div>
     )
 }

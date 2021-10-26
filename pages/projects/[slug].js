@@ -63,9 +63,19 @@ export default function ProjectDetails({ project }) {
         ))}
       </div>
 
-      <div className="method">
-        <h3>Method:</h3>
+      <div>
+        <h3>Challenge</h3>
         <div>{documentToReactComponents(challenge)}</div>
+      </div>
+      <div>
+        <h3>Concept</h3>
+        <div>{documentToReactComponents(challenge)}</div>
+      </div>
+      <div>
+        <h3>Process</h3>
+      </div>
+      <div>
+        <h3>Result</h3>
       </div>
     </div>
   )
