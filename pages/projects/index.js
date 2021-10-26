@@ -1,5 +1,5 @@
 import { createClient } from 'contentful'
-import ProjectCard from '../../components/ProjectCard'
+import ProjectCard from '../../components/projectCard'
 
 export async function getStaticProps() {
 

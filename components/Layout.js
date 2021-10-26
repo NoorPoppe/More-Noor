@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Nav from "./NavBar"
+import Nav from "./navBar"
 import Head from "next/head";
 
 export default function Layout({ children }) {
