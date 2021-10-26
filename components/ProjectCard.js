@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-export default function ProjectCard({ project }) {
+export default function projectCard({ project }) {
     const { title, slug, thumbnail } = project.fields
 
     return (
