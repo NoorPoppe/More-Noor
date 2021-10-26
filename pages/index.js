@@ -1,5 +1,5 @@
 import { createClient } from 'contentful'
-import ProjectCard from '../components/projectCard'
+import ProjectCard from '../components/ProjectCard'
 import styles from '../styles/home.module.css'
 
 
