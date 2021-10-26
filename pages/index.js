@@ -1,4 +1,4 @@
-import { createClient } from 'contentful'
+import { createClient } from 'Contentful'
 import ProjectCard from '../components/ProjectCard'
 import styles from '../styles/Home.module.css'
 
