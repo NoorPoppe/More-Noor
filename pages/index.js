@@ -1,5 +1,7 @@
 import { createClient } from 'contentful'
 import ProjectCard from '../components/ProjectCard'
+import styles from '../styles/Home.module.css'
+
 
 export async function getStaticProps() {
 
@@ -24,7 +26,8 @@ export default function Home({ projects }) {
   console.log(projects)
 
   return (
-    <div className="recipe-list">
+    <div className={styles.container}>
+
       {projects.map(project => (
         <ProjectCard key={project.sys.id} project={project} />
       ))}

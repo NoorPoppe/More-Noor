@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <header>
             <ul>
-                <li><Link href="/"><a><Image src="/logo.png" width={164} height={141} alt="logo" /></a></Link></li>
+                <li><Link href="/"><a><Image src="/vercel.svg" width={164} height={141} alt="logo" /></a></Link></li>
                 <div>
                     <li><Link href="/projects/"><a>More work</a></Link></li>
                     <li><Link href="/about/"><a>About </a></Link></li>
