@@ -1,0 +1,65 @@
+.title {
+  font-size: 7rem;
+  width:55rem;
+  font-family: LemonBird;
+  font-weight:400;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+  width: 49rem
+}
+
+.subTextTitle {
+  font-size: 2rem;
+  font-family: MetropolisLight;
+  width: 63rem;
+  line-height:2;
+}
+
+.playfairItalic {
+  font-family: PlayfairDisplayItalic;
+  color: #3B5C60;
+  font-size: 2.5rem;
+}
+
+.playfair {
+  font-family: PlayfairDisplay;
+}
+
+.header {
+  display: flex;
+}
+
+
+.containerProjects {
+  cursor: url("/hand-vinger.png"), auto ;
+  background-color: #3B5C60;
+  margin-bottom: 10rem;
+  margin-top: 10rem;
+  position: relative;
+}
+
+.containerProjects::before,
+.containerProjects::after {
+  background: url("/background-curve.svg") center bottom repeat;
+  content: '';
+  height: 103px;
+  position: absolute;
+  width: 100%;
+}
+
+.containerProjects::before {
+  bottom: 100%;
+}
+
+.containerProjects::after {
+  top: 100%;
+  transform: scaleY(-1);
+}
+
+.subTitle {
+  font-family: LemonBird;
+  color: white;
+  font-size: 6rem;
+  font-weight: 300;
+
+}

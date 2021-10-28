@@ -1,3 +1,88 @@
 .container {
-  margin: 0 ;
+  margin: 0 auto;
+}
+.header {
+  margin: 0 auto;
+  width: 96rem;
+
+}
+
+/*Header*/
+.title {
+  font-size: 7rem;
+  width:55rem;
+  font-family: LemonBird;
+  font-weight:400;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+}
+
+.subTextTitle {
+  font-size: 2rem;
+  font-family: MetropolisLight;
+  width: 58rem;
+  line-height:2;
+}
+
+.playfairItalic {
+  font-family: PlayfairDisplayItalic;
+  color: #3B5C60;
+}
+
+.playfair {
+  font-family: PlayfairDisplay;
+}
+
+.button {
+cursor: url("/hand-vinger.png"), auto ;
+}
+
+.buttonRight {
+  left: 50%;
+}
+
+.containerProjects {
+  cursor: url("/hand-vinger.png"), auto ;
+  background-color: #3B5C60;
+  margin-bottom: 10rem;
+  margin-top: 10rem;
+  position: relative;
+}
+
+.containerProjects::before,
+.containerProjects::after {
+  background: url("/background-curve.svg") center bottom repeat;
+  content: '';
+  height: 103px;
+  position: absolute;
+  width: 100%;
+}
+
+.containerProjects::before {
+  bottom: 100%;
+}
+
+.containerProjects::after {
+  top: 100%;
+  transform: scaleY(-1);
+}
+
+.arrow {
+  display:flex;
+  justify-content: center;
+}
+
+/*skills*/
+.flip {
+  position:absolute;
+  transform: rotate(360deg) scaleX(-1);
+}
+
+
+.subTitle{
+  color: #3B5C60;
+  font-size: 7rem;
+  font-family: LemonBird;
+  font-weight: 300;
+  text-align: center;
 }

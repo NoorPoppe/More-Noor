@@ -1,0 +1,61 @@
+.footerContainer {
+  background-color: #3B5C60;
+  margin-top: 10rem;
+  position: relative;
+  display: flex;
+ justify-content: center;
+}
+
+.footer::before{
+  background: url("/background-curve.svg") center bottom repeat;
+  content: '';
+  height: 103px;
+  position: absolute;
+  width: 100%;
+}
+
+.footer::before {
+  bottom: 100%;
+}
+
+.title {
+    font-size: 6rem;
+    font-family: LemonBird;
+    color: white;
+    font-weight: 300;
+    padding:2rem;
+}
+
+.logoText {
+    font-size: 3rem;
+    font-family: LemonBird;
+    color: white;
+    font-weight: 300;
+    margin-left: 2rem;
+}
+
+.logo {
+    display: flex;
+}
+
+.text {
+    display:flex;
+    list-style: none;
+}
+
+
+.textA {
+    font-family: MetropolisLight;
+    font-size: 2rem;
+    color: white;
+    
+    margin: 3rem;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    line-height: 100px;
+}
+
+.textA:hover {
+    text-decoration: none;
+    color: white;
+}

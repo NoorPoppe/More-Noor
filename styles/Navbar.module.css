@@ -1,0 +1,31 @@
+
+.nav {
+    position:sticky;
+	top:0;
+    background-color:#fdf8f4;
+    z-index: 2;
+}
+.navBar {
+    margin: 2rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+.navBarItems {
+    display: flex;
+}
+
+.navBarItem {
+    margin-left: 2rem;
+    font-size:2rem;
+    color: #3B5C60;
+    font-family: MetropolisLight;
+}
+
+.navBarItem:hover {
+    text-decoration: none;
+    color: #3B5C60;
+    font-family: MetropolisBold;
+}
