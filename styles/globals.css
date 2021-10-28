@@ -17,6 +17,12 @@
 }
 
 @font-face {
+  font-family: MetropolisBoldItalic;
+    src: url("../public/fonts/Metropolis/BoldItalic/Metropolis-BoldItalic.woff2") format("woff2"),
+       url("../public/fonts/Metropolis/BoldItalic/Metropolis-BoldItalic.woff") format("woff");
+}
+
+@font-face {
   font-family: PlayfairDisplayItalic;
     src: url("../public/fonts/PlayfairDisplay/Italic/PlayfairDisplay-Italic.woff2") format("woff2"),
        url("../public/fonts/PlayfairDisplay/Italic/PlayfairDisplay-Italic.woff") format("woff");

@@ -1,5 +1,6 @@
 import { createClient } from 'contentful'
 import ProjectCard from '../components/ProjectCard'
+import GoodCard from '../components/GoodCard'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
@@ -35,23 +36,22 @@ export default function Home({ projects }) {
           <p className={styles.subTextTitle}>Learning <span className={styles.playfairItalic}>web-design</span>  🌐 ,  Coding and <br /> <span className={styles.playfair}>ux-research</span> 📝.Take a look 👀 on my portfolio! 😊</p>
           <Link href="/projects/"><Image className={styles.button} src="/checkoutmwork-blauw.gif" width={302} height={108} alt="button-more-work" /></Link>
         </div>
-        <Image src="/hey-noor-home.gif" width={540} height={650} alt="ik" />
+        <Image className={styles.imageNoor}src="/hey-noor-home.gif" width={540} height={650} alt="ik" />
       </div>
       <div className={styles.containerProjects}>
         <span className={styles.arrow}><Image src="/pijl-down.gif" width={100} height={100} alt="button go down" /></span>
         <h2 className="hidden">Projects</h2>
-        <div>
+        <div className={styles.containerProject}>
           {projects.map(project => (
             <ProjectCard key={project.sys.id} project={project} />
           ))}
         </div>
-        <Link href="/projects/"><Image className={styles.buttonRight} src="/checkoutmywork-witgif.gif" width={503} height={180} alt="button-more-work" /></Link>
+        <Link className={styles.buttonRight} href="/projects/"><Image  src="/checkoutmywork-witgif.gif" width={503} height={180} alt="button-more-work" /></Link>
       </div>
 
       <div>
         <h2 className={styles.subTitle}> 💪 where am i good in? <span className={styles.flip}>💪</span> </h2>
-        <div>
-        </div>
+          <GoodCard />
       </div>
     </div>
   )

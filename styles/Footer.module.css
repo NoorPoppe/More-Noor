@@ -1,12 +1,13 @@
 .footerContainer {
   background-color: #3B5C60;
   margin-top: 10rem;
+  padding-bottom: 3rem;
   position: relative;
   display: flex;
  justify-content: center;
 }
 
-.footer::before{
+.footerContainer::before{
   background: url("/background-curve.svg") center bottom repeat;
   content: '';
   height: 103px;
@@ -14,8 +15,13 @@
   width: 100%;
 }
 
-.footer::before {
+.footerContainer::before {
   bottom: 100%;
+}
+
+.footer {
+    margin: 0 auto;
+    
 }
 
 .title {
@@ -31,11 +37,13 @@
     font-family: LemonBird;
     color: white;
     font-weight: 300;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .logo {
     display: flex;
+    margin: 0 0 2rem 3rem;
+
 }
 
 .text {
@@ -43,6 +51,9 @@
     list-style: none;
 }
 
+.textColumn {
+    margin-right: 4rem;
+}
 
 .textA {
     font-family: MetropolisLight;

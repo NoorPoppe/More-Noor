@@ -10,7 +10,7 @@
 
 /*Header*/
 .title {
-  font-size: 5.5rem;
+  font-size: 6rem;
   width:55rem;
   font-family: LemonBird;
   font-weight:400;
@@ -34,12 +34,18 @@
   font-family: PlayfairDisplay;
 }
 
+.imageNoor {
+  z-index: -2;
+}
+
+ /*Projects*/
 .button {
 cursor: url("/hand-vinger.png"), auto ;
 }
 
 .buttonRight {
-  left: 50%;
+  display:flex;
+  justify-content: center;
 }
 
 .containerProjects {
@@ -62,12 +68,12 @@ cursor: url("/hand-vinger.png"), auto ;
 .containerProjects::before {
   bottom: 100%;
 }
-
+/*
 .containerProjects::after {
   top: 100%;
   transform: scaleY(-1);
 }
-
+*/
 .arrow {
   display:flex;
   justify-content: center;
@@ -86,4 +92,25 @@ cursor: url("/hand-vinger.png"), auto ;
   font-family: LemonBird;
   font-weight: 300;
   text-align: center;
+}
+
+/*Good at*/
+.goodsContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 96rem;
+  margin: 0 auto;
+}
+
+.goodTitel {
+  font-family: Lemon Bird;
+  color:#3B5C60;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  letter-spacing: 0.04em;
+}
+
+.goodContainer {
+  margin: 7rem;
 }

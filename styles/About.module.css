@@ -1,6 +1,6 @@
 .title {
-  font-size: 7rem;
-  width:55rem;
+  font-size: 6rem;
+  width:25rem;
   font-family: LemonBird;
   font-weight:400;
   letter-spacing: 3px;
@@ -9,26 +9,44 @@
 }
 
 .subTextTitle {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-family: MetropolisLight;
-  width: 63rem;
-  line-height:2;
+  width: 43rem;
+  line-height:1.9;
+}
+.textShadow {
+  font-family: MetropolisBold;
+  color: #3B5C60;
+   font-size: 2rem;
+  text-shadow: 2px 2px  #2C2C2C;
+}
+
+.textItalic {
+  font-family: MetropolisBoldItalic;
+  font-size: 2rem;
 }
 
 .playfairItalic {
   font-family: PlayfairDisplayItalic;
   color: #3B5C60;
+  font-size: 2rem;
+}
+.playfairItalicBig {
+  font-family: PlayfairDisplayItalic;
+  color: #3B5C60;
   font-size: 2.5rem;
 }
-
 .playfair {
   font-family: PlayfairDisplay;
 }
 
 .header {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/*Skills*/
 
 .containerProjects {
   cursor: url("/hand-vinger.png"), auto ;
@@ -58,23 +76,41 @@
 
 .subTitle {
   font-family: LemonBird;
+  font-weight: 300;
   color: white;
   font-size: 6rem;
   font-weight: 300;
+  margin-left: 10rem;
 
+}
+.skillContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 6rem;
+}
+
+.skillText {
+  color: white;
+  text-align: center;
 }
 
 .educationTitle {
- font-family: LemonBird;
- font-weight: 300;
- color: #3B5C60;
-font-size: 6rem;
+  font-family: LemonBird;
+  font-weight: 300;
+  color: #3B5C60;
+  font-size: 6rem;
+  margin-left: 10rem;
 }
-
+/*
 .educationTitle ::before {
  content: url("../public/gif/vol-cap.gif");
 }
 
 .educationTitle ::after {
  content: url('../public/gif/wit-cap.gif');
+}
+*/
+.map {
+   cursor: url("/design.png"), auto ;
+
 }
