@@ -63,3 +63,18 @@
   font-weight: 300;
 
 }
+
+.educationTitle {
+ font-family: LemonBird;
+ font-weight: 300;
+ color: #3B5C60;
+font-size: 6rem;
+}
+
+.educationTitle ::before {
+ content: url("../public/gif/vol-cap.gif");
+}
+
+.educationTitle ::after {
+ content: url('../public/gif/wit-cap.gif');
+}

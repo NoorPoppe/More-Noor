@@ -1,0 +1,40 @@
+.box {
+    background-image:url("../public/img/brief.png");
+    width: 61.75rem;
+    height: 60.224rem;
+    background-repeat:no-repeat;
+}
+
+.box__text {
+    color: #ffaa00;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 40px;
+    padding: 3rem 6rem;
+    width: 30rem;
+}
+
+.button {
+    background-color: #ffaa00;
+    color: white;
+    padding: .5rem  1rem;
+    font-size: 1.5rem;
+    font-weight:100;
+    border-radius:25px;
+    border: none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+}
+
+.input {
+    border: none;
+    border-bottom: 3px solid #ffaa00;
+    color: #ffaa00;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 40px;
+}
+

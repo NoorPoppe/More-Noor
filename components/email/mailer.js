@@ -1,6 +1,8 @@
 import emailjs from "emailjs-com";
 import { useState } from "react";
-import styles from "../style/mailer.module.css"
+import styles from "../../styles/mailer.module.css"
+import Image from 'next/image';
+
 //import { useHistory } from 'react-router-dom';
 //import { Link } from 'react-router-dom';
 
@@ -45,6 +47,7 @@ const Mailer = () => {
                 <input className={styles.input} type="email" name="user_email" placeholder="your e-mail" />
                 
                 <p>Greetings {name}</p>
+                <Image src="/gif/send-message.gif" width={535} height={180} alt="Hello" />
                <input
                     className={styles.button}
                     type="submit"

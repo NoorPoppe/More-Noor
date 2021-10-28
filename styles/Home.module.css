@@ -4,12 +4,13 @@
 .header {
   margin: 0 auto;
   width: 96rem;
+  display: flex;
 
 }
 
 /*Header*/
 .title {
-  font-size: 7rem;
+  font-size: 5.5rem;
   width:55rem;
   font-family: LemonBird;
   font-weight:400;
@@ -18,7 +19,7 @@
 }
 
 .subTextTitle {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-family: MetropolisLight;
   width: 58rem;
   line-height:2;

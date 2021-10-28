@@ -1,15 +1,20 @@
 
+import styles from '../styles/Contact.module.css'
+import Mailer from '../components/email/mailer'
+
+
 export default function Contact() {
 
     return (
-        <div>
+        <div className={styles.contact}>
             <article>
                 <h1> My Contact </h1>
                 <p>Any questions❓ wanna work togheter? send me a message ✉️</p>
             </article>
             <article>
                 <h1 className="hidden">A letter</h1>
-                <p>send message</p>
+                <Mailer />
+
             </article>
             <article>
                 <h1 className="hidden">social contacts</h1>
