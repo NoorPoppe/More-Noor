@@ -12,12 +12,24 @@ export default function Footer() {
                 </div>
                 <ul className={styles.text}>
                     <div className={styles.textColumn}>
-                        <li><Image src="/img/mail.svg" width={58} height={58} alt="mail" /><a className={styles.textA} href="mailto:noor.poppe@icloud.com">noor.poppe@icloud.com</a></li>
-                        <li> <Image src="/img/tel.svg" width={58} height={58} alt="telephone" /><a className={styles.textA} href="tel:+32485535503">+32485535503</a></li>
+                        <div className={styles.textPoint}>
+                            <a href="mailto:noor.poppe@icloud.com"><Image src="/img/mail.svg" width={58} height={58} alt="mail" /></a>
+                            <li><a className={styles.textA} href="mailto:noor.poppe@icloud.com">noor.poppe@icloud.com</a></li>
+                        </div>
+                        <div className={styles.textPoint}>
+                            <a href="tel:+32485535503"> <Image src="/img/tel.svg" width={58} height={58} alt="telephone" /></a>
+                            <li><a className={styles.textA} href="tel:+32485535503">+32485535503</a></li>
+                        </div>
                     </div>
                     <div className={styles.textColumn}>
-                        <li><Image src="/img/cv.svg" width={58} height={58} alt="cv" /><a className={styles.textA} href="https://docdro.id/baaxsd1" target="_blank" rel="noopener noreferrer">CV</a></li>
-                        <li><Image src="/img/isnta.svg" width={58} height={58} alt="instagram" /><a className={styles.textA} href="https://www.instagram.com/more_n00r/">more_n00r</a></li>
+                        <div className={styles.textPoint}>
+                            <a href="https://docdro.id/baaxsd1" target="_blank" rel="noopener noreferrer"><Image src="/img/cv.svg" width={58} height={58} alt="cv" /></a>
+                            <li><a className={styles.textA} href="https://docdro.id/baaxsd1" target="_blank" rel="noopener noreferrer">CV</a></li>
+                        </div>
+                        <div className={styles.textPoint}>
+                            <a href="https://www.instagram.com/more_n00r/"><Image src="/img/isnta.svg" width={58} height={58} alt="instagram" /></a>
+                            <li><a className={styles.textA} href="https://www.instagram.com/more_n00r/">more_n00r</a></li>
+                        </div>
                     </div>
                 </ul>
             </div>

@@ -3,8 +3,6 @@ import Image from 'next/image';
 import styles from '../styles/About.module.css';
 //import ReactPlayer from 'react-player';
 
-
-
 export default function About() {
     return (
         <div>
@@ -36,43 +34,43 @@ export default function About() {
                     </section>
                 </div>
             </article>
-            <article>
-                <h1 className={styles.educationTitle}>My education</h1>
-                <section>
-                    <div>
-
-                        <h2>Howest - kask</h2>
-                        <ul>
-                            <li>Kortrijk, Belgium</li>
-                            <li>Bachelor degree</li>
-                            <li>Digital Design and Development </li>
-                        </ul>
-                    </div>
-                    <Image src="/gif/bol-2018-now.gif" width={200} height={200} alt="2018-now" />
-                </section>
-                <section>
-                    <div>
-                        <h2>Sint-lucas</h2>
-                        <ul>
-                            <li>Kortrijk, Belgium</li>
-                            <li>Bachelor degree</li>
-                            <li>Digital Design and Development </li>
-                        </ul>
-                    </div>
-                    <Image src="/gif/bol-2016-2018.gif" width={200} height={200} alt="2016-2018" />
-                </section>
+            <article className={styles.edu}>
+                <div className={styles.education}>
+                    <h1 className={styles.educationTitle}>My education</h1>
+                    <section className={styles.educationBox}>
+                        <Image src="/gif/bol-2018-now.gif" width={200} height={200} alt="2018-now" />
+                        <div>
+                            <h2 className={styles.educationBoxTitle}>Howest - kask</h2>
+                            <ul className={styles.educationBoxText}>
+                                <li>Kortrijk, Belgium</li>
+                                <li>Bachelor degree</li>
+                                <li className={styles.educationBoxTextHigh}>Digital Design and Development </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section className={styles.educationBox}>
+                        <Image src="/gif/bol-2016-2018.gif" width={200} height={200} alt="2016-2018" />
+                        <div>
+                            <h2 className={styles.educationBoxTitle}>Sint-lucas</h2>
+                            <ul className={styles.educationBoxText}>
+                                <li>Antwerpen, Belgium</li>
+                                <li>Highschool</li>
+                                <li className={styles.educationBoxTextHigh}>Industrial art</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
             </article>
             <article>
                 <h1 className={styles.educationTitle}>My interests</h1>
-                <section>
-                    <div>
-                        <h2>sewing knitting</h2>
-                        <p>copy</p>
-                        <p>image</p>
-                    </div>
-                    <p>2018-now</p>
+                <section className={styles.interestCenterImage}>
+                    <Image className={styles.interestImage} src="/img/museum.png" width={936} height={653} alt="2016-2018" />
                 </section>
-                <p>pijlen voor rects en links </p>
+                <div className={styles.interestPijlen}>
+                    <Image src="/img/pijl-blauw.svg" width={53} height={62} alt="pijl links" />
+                    <Image className={styles.interestPijl} src="/img/pijl-blauw.svg" width={53} height={62} alt="pijl rechts" />
+                </div>
+
             </article>
         </div>
     )

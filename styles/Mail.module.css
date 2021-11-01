@@ -1,0 +1,61 @@
+.form__contact {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.fieldset {
+    position: relative;
+    padding: 30px 0 40px 0;
+    border: none;
+    background: #fff linear-gradient(rgba(0,0,0,.1) 1px, transparent 0) 0 20px / 100% 40px;
+ } 
+  
+.p {
+    margin: 0 0 40px 0;
+    line-height: 40px;
+	}
+
+.span {
+	position: relative;
+	line-height: 40px;
+}
+
+
+.field__name {
+    color: #7DB665;
+    display: inline;
+
+}
+
+.field__email {
+    color: #7DB665;
+      display: inline;
+
+}
+
+.field__message {
+    color: #7DB665;
+      display: inline;
+
+}
+
+.form__field {
+  display: inline;
+  color: #7DB665;
+  outline: none;
+
+ 
+  /*
+  &:empty,
+  &:empty:focus {
+    &:before {
+      content: attr(data-placeholder);
+    }
+  }*/
+}
+
+.form__field:empty {
+    display: inline-block;
+  }
+
+
+

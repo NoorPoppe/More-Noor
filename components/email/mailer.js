@@ -1,6 +1,7 @@
 import emailjs from "emailjs-com";
 import { useState } from "react";
 import styles from "../../styles/mailer.module.css"
+import style from "../../styles/Mail.module.css"
 import Image from 'next/image';
 
 //import { useHistory } from 'react-router-dom';
@@ -32,28 +33,37 @@ const Mailer = () => {
         history.push('/succes')
     }*/
     return (
-        <div className={styles.box}>
-            <form className={styles.box__text} onSubmit={sendEmail}>
-                <label>Hey I'm </label>
-                <input className={styles.input}
+        <div className={`${styles.box}${style.wrapper}`}>
+            <form className={`${styles.form} ${style.form__contact}`}onSubmit={sendEmail}>
+                <fieldset className={styles.fieldset}>
+                <label className={`${styles.box__text}${style.p}`}>Hey I'm </label>
+                <input className={`${style.form__field} ${style.field__name} ${style.span}${styles.input}`} 
+                        data-placeholder="your name" 
+                        tabIndex="1" 
+                        contentEditable
+                        size="17"
                         type="text" 
-                        placeholder="your name"
+                        /*placeholder="your name"*/
                         name="name"
                         value={name}
-                        onChange={(e) => setName(e.target.value)} />!<br/>
-                <label>I would like </label>
-                <textarea className={styles.input}  name="message" rows="4" placeholder="project description" />
-                <label>You can contact me via </label>
-                <input className={styles.input} type="email" name="user_email" placeholder="your e-mail" />
+                        onChange={(e) => setName(e.target.value)} />.<br/>
+                    <label className={`${styles.box__text}${style.p}`}>I would like </label>
+                    <textarea className={`${styles.textarea} ${style.span}`}
+                        name="message" 
+                        size="1"
+                        rows="1"
+                        placeholder="project description" />
+                    <label className={`${styles.box__text}${style.p}`}>You can contact me via </label>
+                    <input className={`${styles.input} ${style.span}`} type="email" name="user_email" placeholder="your e-mail" />
                 
-                <p>Greetings {name}</p>
-                <Image src="/gif/send-message.gif" width={535} height={180} alt="Hello" />
-               <input
+                <p className={styles.box__text}>Greetings {name}</p>               
+                <input
                     className={styles.button}
                     type="submit"
                     value="Send message"
                     to="/succes"
                 />
+            </fieldset>
             </form>
         </div>
     );

@@ -80,7 +80,6 @@
   color: white;
   font-size: 6rem;
   font-weight: 300;
-  margin-left: 10rem;
 
 }
 .skillContainer {
@@ -94,12 +93,22 @@
   text-align: center;
 }
 
+.education {
+  width: 96rem;
+  margin: 0 auto;
+}
+
 .educationTitle {
   font-family: LemonBird;
   font-weight: 300;
   color: #3B5C60;
   font-size: 6rem;
-  margin-left: 10rem;
+}
+.educationTitle::before {
+    content: url("../public/gif/vol-cap.gif");
+}
+.educationTitle::after {
+    content: url("../public/gif/wit-cap.gif");
 }
 /*
 .educationTitle ::before {
@@ -110,7 +119,70 @@
  content: url('../public/gif/wit-cap.gif');
 }
 */
+
+.edu {
+  background-image: url("/img/hoed.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+}
+
+.educationBox {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.educationBoxTitle {
+  font-family: LemonBird;
+  font-size: 4.5rem;
+  color: #3B5C60;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.educationBoxText {
+  font-family: MetropolisLight;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 65px;
+  color: #2C2C2C;
+}
+
+.educationBoxTextHigh {
+  font-family: MetropolisBold;
+  color: #FFFFFF;
+ /* background: url(/img/balk.svg) no-repeat;*/
+  background-color: #3B5C60;
+}
+
+.educationBoxTextHigh:nth-child(0) {
+  background-size: 900px 100px;
+}
+.educationBoxTextHigh:nth-child(1) {
+  background-size: 200px 30px;
+}
+
 .map {
    cursor: url("/design.png"), auto ;
 
+}
+
+/*interest*/
+.interestCenterImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interestPijlen {
+ display: flex;
+ justify-content: space-around;
+ width: 40rem;
+ padding-top:6rem;
+ margin: 0 auto;
+}
+
+.interestPijl {
+  transform: scaleX(-1);
 }

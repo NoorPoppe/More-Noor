@@ -6,35 +6,46 @@
 }
 
 .box__text {
-    color: #ffaa00;
+    font-family: Metropolis;
+    font-style: normal;
     font-weight: 600;
-    font-size: 25px;
-    line-height: 40px;
-    padding: 3rem 6rem;
-    width: 30rem;
+    font-size: 1.7rem;
+    color: #3B5C60;
+
 }
 
-.button {
-    background-color: #ffaa00;
-    color: white;
-    padding: .5rem  1rem;
-    font-size: 1.5rem;
-    font-weight:100;
-    border-radius:25px;
-    border: none;
+.form {
+    width: 35rem;
+    margin-left: 5rem;
+    padding-top: 4rem;
+}
+
+/*.button {
+    background:url("../public/gif/send-message.gif") no-repeat;
+    width:25rem;
+    height:9rem;
     display:flex;
     justify-content:center;
     align-items:center;
     cursor: pointer;
 }
-
+*/
 .input {
     border: none;
-    border-bottom: 3px solid #ffaa00;
-    color: #ffaa00;
+    border-bottom: 3px solid #3B5C60;
+    background-color: #FDF8F4;
+    color: #3B5C60;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
     line-height: 40px;
 }
 
+.input:focus{
+     outline: 2px solid #FDF8F4;
+}
+
+
+.textarea {
+    min-width: 5rem;
+}

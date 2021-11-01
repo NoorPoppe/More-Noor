@@ -50,7 +50,7 @@ export default function Home({ projects }) {
       </div>
 
       <div>
-        <h2 className={styles.subTitle}> 💪 where am i good in? <span className={styles.flip}>💪</span> </h2>
+        <h2 className={styles.subTitle}> 💪 what am i good in? <span className={styles.flip}>💪</span> </h2>
           <GoodCard />
       </div>
     </div>

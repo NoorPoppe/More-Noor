@@ -1,6 +1,53 @@
 .contact {
-background: url("../public/gif/vlieger2.gif") no-repeat center ;
-background-size: 110%;
-background-position: bottom 800px right 100px;
+    background: url("../public/gif/vlieger2.gif") no-repeat center ;
+    background-size: 110%;
+    background-position: bottom 150px right 60px;
+}
 
+.contactContainer {
+    width: 96rem;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 6.5rem;
+    font-family: LemonBird;
+    font-weight: 300;
+    color:#2C2C2C;
+}
+
+.title::after {
+    content: url("../public/img/contacts.svg");
+}
+
+.text {
+    font-size:2rem;
+    width: 40rem;
+    margin: 2rem 0;
+}
+
+.textItalic {
+    font-family: PlayfairDisplayItalic;
+    font-weight: 900;
+    color:#3B5C60;
+}
+
+.letterContainter {
+    display: flex;
+}
+
+.contactBox {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.contactBoxText {
+    margin-left: 1rem;
+    color: #2C2C2C;
+    
+}
+
+.contactText {
+    font-family: MetropolisLight;
 }
