@@ -1,4 +1,4 @@
-/*import { createClient } from 'contentful'
+import { createClient } from 'contentful'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Image from 'next/image'
 
@@ -41,6 +41,7 @@ export default function ProjectDetails({ project }) {
 
   return (
     <div>
+      {/*
       <div className="banner">
         <Image
           src={'https:' + featuredImage.fields.file.url}
@@ -77,6 +78,7 @@ export default function ProjectDetails({ project }) {
       <div>
         <h3>Result</h3>
       </div>
-    </div>
+      */}
+    </div>     
   )
-}*/
+}
