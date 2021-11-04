@@ -1,5 +1,6 @@
 import { createClient } from 'contentful'
 import ProjectCard from '../../components/ProjectCard'
+import styles from '../../styles/Project.module.css'
 
 export async function getStaticProps() {
 
@@ -24,11 +25,11 @@ export default function Projects({ projects }) {
     console.log(projects)
 
     return (
-        <div className="recipe-list">
-            <article>
-                <h1>Here is some of my work </h1>
+        <div className={styles.container}>
+            <article className={styles.containerTitle}>
+                <h1 className={styles.title}>Here is some of my <span className={styles.titleGreen}>work</span> </h1>
             </article>
-            <article>
+            <article className={styles.projectContainer}>
                 <h1 className="hidden">Projects</h1>
                 <section>
                     {projects.map(project => (

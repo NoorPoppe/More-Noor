@@ -11,7 +11,7 @@ export default function Layout({ children }) {
       <Head>
         <title>More Noor</title>
         <meta name="keywords" content="projects"></meta>
-        <link rel="icon" href="/logo.svg" />
+        <link rel="icon" href="/logo-noor.svg" />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@clayui/css/lib/css/atlas.css"

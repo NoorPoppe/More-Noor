@@ -1,10 +1,14 @@
 .footerContainer {
+    background: url("../public/gif/bckgrnd-footer.gif") no-repeat center ;
+    background-size: 100%;
+  background-position: bottom;
   background-color: #3B5C60;
   margin-top: 10rem;
   padding-bottom: 3rem;
   position: relative;
   display: flex;
  justify-content: center;
+
 }
 
 .footerContainer::before{

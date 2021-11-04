@@ -1,13 +1,4 @@
-.title {
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-    width: 15.616rem;
-    font-family:MetropolisBold;
-
-}
 .map {
     cursor: url("/ogen.png"), auto ;
     width: 17rem;
 }
-

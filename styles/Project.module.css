@@ -1,0 +1,39 @@
+.containerTitle {
+    margin: 0 auto;
+    width: 96rem;
+}
+
+.title {
+    font-family: LemonBird;
+    font-size: 5.5rem;
+    font-weight: 300;
+    color: #2C2C2C;
+}
+
+
+.titleGreen {
+    color: #3B5C60;
+}
+
+.projectContainer {
+    cursor: url("/hand-vinger.png"), auto ;
+    background-color: #3B5C60;
+    margin-bottom: 10rem;
+    position: relative;
+    top: 3rem;
+}
+
+
+.projectContainer::before,
+.projectContainer::after {
+  z-index: -1;
+  background: url("/background-curve.svg") center bottom repeat;
+  content: '';
+  height: 103px;
+  position: absolute;
+  width: 100%;
+}
+
+.projectContainer::before {
+  bottom: 100%;
+}

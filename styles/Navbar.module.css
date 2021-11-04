@@ -1,31 +1,24 @@
+.item {
+  color: #3B5C60;
+  font-family: MetropolisLight;
+  text-decoration: none;
+  font-size:1.7rem;
+}
+.item:hover {
+ text-decoration: none;
+ color: #3B5C60;
+ font-family: MetropolisBold;
 
-.nav {
-    position:sticky;
-	top:0;
-    background-color:#fdf8f4;
-    z-index: 2;
-}
-.navBar {
-    margin: 2rem;
-    padding-top: 1rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-}
-.navBarItems {
-    display: flex;
 }
 
-.navBarItem {
-    margin-left: 2rem;
-    font-size:2rem;
-    color: #3B5C60;
-    font-family: MetropolisLight;
-}
 
-.navBarItem:hover {
-    text-decoration: none;
-    color: #3B5C60;
-    font-family: MetropolisBold;
+@media (max-width: 768px) {
+
+    .item {
+        font-family: LemonBird;
+        font-weight: 300;
+        margin: 2rem;
+        font-size:2rem;
+    }
+
 }
