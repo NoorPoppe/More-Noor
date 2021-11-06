@@ -5,28 +5,28 @@ import styled from "styled-components";
 import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    return (
-        <Nav>
-            <Logo>
-                <Link href="/" ><a><Image src="/logo-noor.svg" width={58} height={76} alt="logo" /></a></Link>
-            </Logo>
-            <Hamburger onClick={() => setIsOpen(!isOpen)}>
-                <span />
-                <span />
-                <span />
-            </Hamburger>
-            <Menu isOpen={isOpen}>
-                <MenuLink onClick={() => setIsOpen(!isOpen)}>
-                    <Link href="/projects/"><a className={styles.item}>More work</a></Link>
-                </MenuLink>
-                <MenuLink onClick={() => setIsOpen(!isOpen)}>
-                    <Link href="/about/"><a className={styles.item}>About </a></Link>
-                </MenuLink>
-                <MenuLink onClick={() => setIsOpen(!isOpen)}><Link href="/contact/"><a className={styles.item}>Contact</a></Link></MenuLink>
-            </Menu>
-        </Nav>
-    );
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <Nav>
+      <Logo>
+        <Link href="/" ><a><Image src="/logo-noor.svg" width={58} height={76} alt="logo" /></a></Link>
+      </Logo>
+      <Hamburger onClick={() => setIsOpen(!isOpen)}>
+        <span />
+        <span />
+        <span />
+      </Hamburger>
+      <Menu isOpen={isOpen}>
+        <MenuLink onClick={() => setIsOpen(!isOpen)}>
+          <Link href="/projects/"><a className={styles.item}>More work</a></Link>
+        </MenuLink>
+        <MenuLink onClick={() => setIsOpen(!isOpen)}>
+          <Link href="/about/"><a className={styles.item}>About </a></Link>
+        </MenuLink>
+        <MenuLink onClick={() => setIsOpen(!isOpen)}><Link href="/contact/"><a className={styles.item}>Contact</a></Link></MenuLink>
+      </Menu>
+    </Nav>
+  );
 };
 
 export default Navbar;
