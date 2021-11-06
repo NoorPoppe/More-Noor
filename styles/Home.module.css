@@ -3,9 +3,9 @@
 }
 .header {
   margin: 0 auto;
-  width: 96rem;
   display: flex;
   justify-content: space-around;
+  width: 72rem;
 }
 
 /*Header*/
@@ -36,8 +36,7 @@
 
 .imageNoor {
   z-index: -2;
-  width: 36rem;
-  height: 36rem;
+  position: relative;
 }
 
  /*Projects*/
