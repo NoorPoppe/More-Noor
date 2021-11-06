@@ -33,7 +33,7 @@ export default function Home({ projects }) {
     <div className={styles.container}>
       <div className={styles.header}>
         <div>
-          <h1 className={styles.title}><Image src="/hello.gif" width={219} height={132} alt="Hello" /><Image src="/hello-hand.gif" width={170} height={128} alt="Hello" /> I’m <span className={styles.playfairItalic}>Noor</span>. At the moment I’m a devine student 🎓.</h1>
+          <h1 className={styles.title}><Image src="/hello.gif" width={200} height={110} alt="Hello" /><Image src="/hello-hand.gif" width={150} height={110} alt="Hello" /> I’m <span className={styles.playfairItalic}>Noor</span>. At the moment I’m a devine student 🎓.</h1>
           <p className={styles.subTextTitle}>Learning <span className={styles.playfairItalic}>web-design</span>  🌐 ,  Coding and <br /> <span className={styles.playfair}>ux-research</span> 📝.Take a look 👀 on my portfolio! 😊</p>
           <Link href="/projects/"><Image className={styles.button} src="/checkoutmwork-blauw.gif" width={503} height={180} alt="button-more-work" /></Link>
         </div>

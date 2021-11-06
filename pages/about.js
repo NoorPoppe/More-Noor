@@ -22,14 +22,23 @@ export default function About() {
                 <div className={styles.skillContainer}>
                     <section className={styles.map}>
                         <Image src="/map-wit.gif" width={248} height={211} alt="map-work" />
+                        <span className={styles.large}>
+                            <Image src="/design.svg" width={600} height={403} alt="map-work" />
+                        </span>
                         <h2 className={styles.skillText}>Design</h2>
                     </section>
                     <section className={styles.map}>
                         <Image src="/map-wit.gif" width={248} height={211} alt="map-work" />
+                        <span className={styles.large}>
+                            <Image src="/img/development.svg" width={600} height={403} alt="map-work" />
+                        </span>
                         <h2 className={styles.skillText}>Development</h2>
                     </section>
                     <section className={styles.map}>
                         <Image src="/map-wit.gif" width={248} height={211} alt="map-work" />
+                        <span className={styles.large}>
+                            <Image src="/design.svg" width={600} height={403} alt="map-work" />
+                        </span>
                         <h2 className={styles.skillText}>Research</h2>
                     </section>
                 </div>

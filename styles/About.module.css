@@ -164,10 +164,18 @@
 }
 
 .map {
-   cursor: url("/design.png"), auto ;
-
+  cursor: url("/ogen.png") , auto ;
 }
 
+.large {
+  position: absolute;
+  left: -9999px;
+}
+
+.map:hover .large {
+  left: 20px;
+  top: -150px;
+}
 /*interest*/
 .interestCenterImage {
   display: flex;
