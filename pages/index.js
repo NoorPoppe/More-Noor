@@ -4,7 +4,8 @@ import GoodCard from '../components/GoodCard'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
-
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 export async function getStaticProps() {
 
@@ -42,9 +43,9 @@ export default function Home({ projects }) {
         <span className={styles.arrow}><Image src="/pijl-down.gif" width={70} height={70} alt="button go down" /></span>
         <h2 className="hidden">Projects</h2>
         <div className={styles.containerProject}>
-            {/*projects.map(project => (
+            {projects.map(project => (
               <ProjectCard className={styles.projectProjectCard} key={project.sys.id} project={project} />
-            ))*/}
+            ))}
         </div>
         <Link className={styles.buttonRight} href="/projects/"><Image  src="/checkoutmywork-witgif.gif" width={503} height={180} alt="button-more-work" /></Link>
       </div>

@@ -54,7 +54,6 @@ const Nav = styled.div`
 
 const Logo = styled.a`
   padding: 1rem 0;
-
 `;
 
 const Menu = styled.div`
@@ -86,4 +85,4 @@ const Hamburger = styled.div`
   @media (max-width: 768px) {
     display: flex;
   }
-`; 
+`;

@@ -39,6 +39,7 @@
 
  /*Projects*/
  /*grid*/
+
  .containerProjects {
   cursor: url("/hand-vinger.png"), auto ;
   background-color: #3B5C60;
@@ -46,6 +47,12 @@
   position: relative;
   top: 3rem; 
 }
+.projectDiv {
+    cursor: url("/ogen.png"), auto ;
+    width: 17rem;
+}
+
+ /*
 .containerProject {
   margin: 0 auto;
   width: 96rem;
@@ -135,10 +142,21 @@
 }
 .mapTitle:nth-child(3) {
   grid-area: title; 
-}
+}*/
 .map {
     cursor: url("/ogen.png"), auto ;
     width: 17rem;
+}
+.mapTitle {
+  color: white;
+  font-size: 5rem;
+  font-family: LemonBird;
+  font-weight: 300;
+}
+.projectDivDiv {
+  display: flex;
+  justify-content: space-around;
+  margin: 15rem;
 }
 
 

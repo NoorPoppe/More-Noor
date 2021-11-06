@@ -33,9 +33,9 @@ export default function Projects({ projects }) {
                 <h1 className="hidden">Projects</h1>
                 
                 <section>
-                    {/*projects.map(project => (
+                    {projects.map(project => (
                         <ProjectCard key={project.sys.id} project={project} />
-                    ))*/}
+                    ))}
                 </section>
             </article>
         </div>
