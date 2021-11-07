@@ -80,6 +80,7 @@
   color: white;
   font-size: 6rem;
   font-weight: 300;
+   margin: 4rem 10rem ;
 
 }
 .skillContainer {
@@ -99,16 +100,27 @@
 }
 
 .educationTitle {
+  margin: 4rem 5rem;
   font-family: LemonBird;
   font-weight: 300;
   color: #3B5C60;
   font-size: 6rem;
 }
 .educationTitle::before {
-    content: url("../public/gif/vol-cap.gif");
+      background-image: url('../public/gif/vol-cap.gif');
+    background-size: 65px 60px;
+    display: inline-block;
+    width: 65px; 
+    height: 60px;
+    content:"";
 }
 .educationTitle::after {
-    content: url("../public/gif/wit-cap.gif");
+    background-image: url('../public/gif/wit-cap.gif');
+    background-size: 75px 70px;
+    display: inline-block;
+    width: 75px; 
+    height: 70px;
+    content:"";
 }
 /*
 .educationTitle ::before {
@@ -135,7 +147,7 @@
 
 .educationBoxTitle {
   font-family: LemonBird;
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: #3B5C60;
   font-weight: 300;
   margin-bottom: 1rem;
@@ -163,7 +175,7 @@
   background-size: 200px 30px;
 }
 
-.map {
+.map, .map2, .map3 {
   cursor: url("/ogen.png") , auto ;
 }
 
@@ -173,10 +185,46 @@
 }
 
 .map:hover .large {
-  left: 20px;
-  top: -150px;
+  transform: rotate(-4deg);
+  z-index: 3;
+  left: 320px;
+  top: -120px;
+}
+
+
+.large2 {
+  position: absolute;
+  left: -9999px;
+}
+
+.map2:hover .large2 {
+  left: 840px;
+  top: -100px;
+  z-index: 3;
+  transform: rotate(-4deg);
+}
+
+
+.large3 {
+  position: absolute;
+  left: -9999px;
+}
+
+.map3:hover .large3 {
+  left: 700px;
+  top: -120px;
+  z-index: 3;
+  transform: rotate(4deg);
 }
 /*interest*/
+.intTitle {
+  font-family: LemonBird;
+  font-weight: 300;
+  color: #3B5C60;
+  font-size: 6rem;
+  margin: 10rem;
+}
+
 .interestCenterImage {
   display: flex;
   align-items: center;

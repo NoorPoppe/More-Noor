@@ -23,21 +23,21 @@ export default function About() {
                     <section className={styles.map}>
                         <Image src="/map-wit.gif" width={248} height={211} alt="map-work" />
                         <span className={styles.large}>
-                            <Image src="/design.svg" width={600} height={403} alt="map-work" />
+                            <Image src="/gif/design.gif" width={600} height={403} alt="map-work" />
                         </span>
                         <h2 className={styles.skillText}>Design</h2>
                     </section>
-                    <section className={styles.map}>
+                    <section className={styles.map2}>
                         <Image src="/map-wit.gif" width={248} height={211} alt="map-work" />
-                        <span className={styles.large}>
-                            <Image src="/img/development.svg" width={600} height={403} alt="map-work" />
+                        <span className={styles.large2}>
+                            <Image src="/gif/developmeng.gif" width={600} height={403} alt="map-work" />
                         </span>
                         <h2 className={styles.skillText}>Development</h2>
                     </section>
-                    <section className={styles.map}>
+                    <section className={styles.map3}>
                         <Image src="/map-wit.gif" width={248} height={211} alt="map-work" />
-                        <span className={styles.large}>
-                            <Image src="/design.svg" width={600} height={403} alt="map-work" />
+                        <span className={styles.large3}>
+                            <Image src="/gif/research.gif" width={600} height={403} alt="map-work" />
                         </span>
                         <h2 className={styles.skillText}>Research</h2>
                     </section>
@@ -45,7 +45,7 @@ export default function About() {
             </article>
             <article className={styles.edu}>
                 <div className={styles.education}>
-                    <h1 className={styles.educationTitle}>My education</h1>
+                    <h1 className={styles.educationTitle}> My education </h1>
                     <section className={styles.educationBox}>
                         <Image src="/gif/bol-2018-now.gif" width={200} height={200} alt="2018-now" />
                         <div>
@@ -71,7 +71,7 @@ export default function About() {
                 </div>
             </article>
             <article>
-                <h1 className={styles.educationTitle}>My interests</h1>
+                <h1 className={styles.intTitle}>My interests</h1>
                 <section className={styles.interestCenterImage}>
                     <Image className={styles.interestImage} src="/img/museum.png" width={936} height={653} alt="2016-2018" />
                 </section>
