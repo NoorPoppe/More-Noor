@@ -23,14 +23,14 @@ export default function About() {
                     <section className={styles.map}>
                         <Image src="/map-wit.gif" width={248} height={211} alt="map-work" />
                         <span className={styles.large}>
-                            <Image src="/gif/design.gif" width={600} height={403} alt="map-work" />
+                            <Image src="/gif/Design.gif" width={600} height={403} alt="map-work" />
                         </span>
                         <h2 className={styles.skillText}>Design</h2>
                     </section>
                     <section className={styles.map2}>
                         <Image src="/map-wit.gif" width={248} height={211} alt="map-work" />
                         <span className={styles.large2}>
-                            <Image src="/gif/developmeng.gif" width={600} height={403} alt="map-work" />
+                            <Image src="/gif/Developmeng.gif" width={600} height={403} alt="map-work" />
                         </span>
                         <h2 className={styles.skillText}>Development</h2>
                     </section>
