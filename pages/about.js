@@ -1,9 +1,10 @@
 import Image from 'next/image';
 //import Link from 'next/link';
 import styles from '../styles/About.module.css';
-//import ReactPlayer from 'react-player';
+
 
 export default function About() {
+
     return (
         <div>
             <article>
@@ -70,17 +71,7 @@ export default function About() {
                     </section>
                 </div>
             </article>
-            <article>
-                <h1 className={styles.intTitle}>My interests</h1>
-                <section className={styles.interestCenterImage}>
-                    <Image className={styles.interestImage} src="/img/museum.png" width={936} height={653} alt="2016-2018" />
-                </section>
-                <div className={styles.interestPijlen}>
-                    <Image src="/img/pijl-blauw.svg" width={53} height={62} alt="pijl links" />
-                    <Image className={styles.interestPijl} src="/img/pijl-blauw.svg" width={53} height={62} alt="pijl rechts" />
-                </div>
 
-            </article>
         </div>
     )
 }

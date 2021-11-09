@@ -1,8 +1,21 @@
 import emailjs from "emailjs-com";
-import { useState } from "react";
+//import { useState } from "react";
 import styles from "../../styles/Mail.module.css"
+import style from "../../styles/mailer.module.css"
+import { useState, useRef, useEffect } from "react";
 
 const Mail = () => {
+    const [content, setContent] = useState('');
+    const [width, setWidth] = useState(0);
+    const span = useRef();
+
+    useEffect(() => {
+        setWidth(span.current.offsetWidth);
+    }, [content]);
+
+    const changeHandler = evt => {
+        setContent(evt.target.value);
+    };
     const [name, setName] = useState("");
     function sendEmail(e) {
         e.preventDefault();
@@ -17,37 +30,54 @@ const Mail = () => {
         }).catch(err => console.log(err));
     }
     return (
-        <div className={styles.wrapper}>
+        <div className={`${style.box}${styles.wrapper}`}>
             <form className={styles.form__contact} onSubmit={sendEmail}>
                 <fieldset className={styles.fieldset}>
-                    <p className={styles.p}>Hey, Stranger!</p>
-                    <p>My name is 
+                    <p>Hey, I'm
+                        <wrapper is="custom" className={style.testyWrapper}>
                         <span 
-                            className={`${styles.form__field} ${styles.field__name}`} 
-                            data-placeholder="your name" 
-                            tabIndex="1" 
-                            contentEditable
-                            type="text"
+                            className={`${styles.form__field} ${styles.field__name} ${style.testyhiddde}`}
+                            id="hide"
+                            ref={span}
+                            /*placeholder="your name" */
+                           
+                            /*type="text"
                             name="name"
                             value={name}
-                            onChange={(e) => setName(e.target.value)}>
+                            onChange={(e) => setName(e.target.value)}*/>{content}
                          </span> 
+                            <input
+                                className={`${style.form__field} ${style.field__name}`}
+                                tabIndex="1"
+                                size="1"
+                                rows="1"
+                                placeholder="your name"
+                                name="name"
+                                value={name}
+                                type="text"
+                                style={{ width }}
+                                autoFocus
+                                onChange={ changeHandler}
+                            />
+                        </wrapper>!
+                    </p>
                         and I'm writting tou you since I'm interested in 
                         <span
                             className={`${styles.form__field} ${styles.field__message}`} 
                             >
                                 <input 
+                                className={styles.test}
                                 tabIndex="2"
                                 contentEditable
-                                data-placeholder="your message" 
-                                name="message"
+                                placeholder="your message" 
+                                name="message" 
                                 />
                         </span>
-                    .</p>
+
                     <p>This is my 
                         <span
                             className={`${styles.form__field} ${styles.field__email}`} 
-                            data-placeholder="email address" 
+                            placeholder="email address" 
                             tabIndex="3" 
                             contentEditable
                             type="email" 

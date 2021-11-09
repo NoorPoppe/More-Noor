@@ -16,7 +16,6 @@ export default function Contact() {
                 <div className={styles.letterContainter}>
                     <article>
                         <h1 className="hidden">A letter</h1>
-                        <Mail />
                         <Mailer />
                     </article>
                     <article>

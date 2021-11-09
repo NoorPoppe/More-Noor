@@ -43,9 +43,9 @@ export default function Home({ projects }) {
         <span className={styles.arrow}><Image src="/pijl-down.gif" width={70} height={70} alt="button go down" /></span>
         <h2 className="hidden">Projects</h2>
         <div className={styles.containerProject}>
-            {projects.map(project => (
+            {/*projects.map(project => (
               <ProjectCard className={styles.projectProjectCard} key={project.sys.id} project={project} />
-            ))}
+            ))*/}
         </div>
         <Link className={styles.buttonRight} href="/projects/"><Image  src="/checkoutmywork-witgif.gif" width={503} height={180} alt="button-more-work" /></Link>
       </div>

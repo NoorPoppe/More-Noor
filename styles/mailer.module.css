@@ -1,8 +1,36 @@
-.box {
-    background-image:url("../public/img/brief.png");
-    width: 61.75rem;
-    height: 60.224rem;
-    background-repeat:no-repeat;
+.testyWrapper > * {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+}
+
+.testyhiddde{
+  position: absolute;
+  opacity: 0;
+  z-index: -100;
+  white-space: pre-line;
+}
+
+.testy {
+  min-width: 8.2rem;
+  padding: 0 .2rem;
+}
+
+.form__contact {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.fieldset {
+    position: relative;
+    padding: 30px 30px 40px 40px;
+    border: none;
+    min-height: 30rem;
+    background: #fff linear-gradient(rgba(0,0,0,.1) 1px, transparent 0) 0 20px / 100% 40px;
+ } 
+  
+.imageMessage {
+  z-index: 3;
+  position: relative;
+
 }
 
 .box__text {
@@ -33,12 +61,11 @@
 .input {
     border: none;
     border-bottom: 3px solid #3B5C60;
-    background-color: #FDF8F4;
     color: #3B5C60;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 1.5rem;
+    line-height: 7px;
 }
 
 .input:focus{
@@ -47,5 +74,9 @@
 
 
 .textarea {
-    min-width: 5rem;
+  line-height: 25px;
+}
+
+.wouldLLike {
+  line-height: 25px;
 }
